@@ -14,7 +14,9 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "autoprefixer": "^7.2.6",
     "element-ui": "^2.15.1",
+    "precss": "^4.0.0",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },

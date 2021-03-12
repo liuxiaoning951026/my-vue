@@ -1,5 +1,5 @@
 <template>
-  <div class="home111">
+  <div id="home111">
     <!-- 导航条 start -->
     <div class="nav">
       <div v-for="item in menuList" :key="item.name" class="div1">
@@ -26,12 +26,17 @@ export default {
 }
 </script>
 <style lang="postcss" scoped>
-.home111 {
+#home111 {
   /* position: inherit; */
   /* border: 2px solid red; */
   height: 100%;
   width: 100%;
   display: flex;
+  .section-part {
+    width: calc(100% - 120px);
+    height: 100%;
+    background-color: khaki;
+  }
 }
 
 .nav {
@@ -50,11 +55,11 @@ a {
   cursor: pointer;
 }
 
-.section-part {
+/* .section-part {
   width: calc(100% - 120px);
   height: 100%;
   background-color: khaki;
-}
+} */
 
 /deep/ .el-row {
   width: 100%;
